@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5vw;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    height: 7vh;
+    margin-left: 1vw;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #9311f0;
+}
+
+.donate-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    color: #000;
+    background-color: #7AE5FD;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 1vw;
+}
+
+.donate-btn:hover {
+    background-color: #6FCEFF;
+}
+
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.support_fund {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding: 0 5vw;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+}
+
+.support_fund-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+}
+
+.support_fund h1 {
+    font-size: 63px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+.support_fund p {
+    font-size: 20px;
+    max-width: 400px;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    color: #000;
+}
+
+.support-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    color: #000;
+    background-color: #FFF;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.support-btn:hover {
+    background-color: #FFD700;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+
+.who_are_we {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #fff;
+    padding: 0 5vw;
+}
+
+.who_are_we-content {
+    max-width: 800px;
+    width: 100%;
+}
+
+.who_are_we h1 {
+    font-size: 60px;
+    font-weight: normal;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+
+.who_are_we p {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+
+.who_are_we .subtext {
+    font-size: 16px;
+    color: #73A6B1;
+}
+
+#a {
+    background-color: #6F1EAA;
+    color: #fff;
+    width: 100%;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.8rem 3vw;
+    }
+
+    .logo img {
+        height: 6vh;
+    }
+
+    nav {
+        flex-wrap: nowrap;
+        gap: 1rem;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+    }
+
+    .donate-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .support_fund {
+        padding: 0 3vw;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .support_fund h1 {
+        font-size: 48px;
+        line-height: 1.3;
+    }
+
+    .support_fund p {
+        font-size: 18px;
+        max-width: 320px;
+    }
+
+    .support_fund-content {
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .who_are_we h1 {
+        font-size: 48px;
+    }
+
+    .who_are_we p {
+        font-size: 18px;
+    }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+
+@media (max-width: 480px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.4rem 1rem;
+        height: auto;
+        max-height: 120px;
+        gap: 0.2rem;
+        position: relative;
+        z-index: 2;
+        overflow: visible;
+    }
+
+    .logo {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.3rem;
+    }
+
+    .logo img {
+        height: 4vh;
+    }
+
+    nav {
+        order: 2;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    nav a {
+        font-size: 0.75rem;
+        padding: 0.2rem;
+        text-transform: uppercase;
+    }
+
+    .donate-btn {
+        order: 1;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+        align-self: center;
+        border-radius: 1.5rem;
+    }
+
+    .support_fund {
+        padding: 0 5vw;
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        margin-top: 80px;
+        padding-bottom: 3rem;
+        color: #fff;
+    }
+
+    .support_fund h1 {
+        font-size: 24px;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+    }
+
+    .support_fund p {
+        font-size: 12px;
+        max-width: 200px;
+        margin-bottom: 1.5rem;
+    }
+
+    .support_fund-content {
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .support-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+        color: #000;
+        background-color: #FFF;
+        border: none;
+        border-radius: 2rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        align-self: flex-start;
+    }
+
+    .support-btn:hover {
+        background-color: #FFD700;
+    }
+
+    .who_are_we h1 {
+        font-size: 24px;
+    }
+
+    .who_are_we p {
+        font-size: 14px;
+        max-width: 90%;
+    }
+}
