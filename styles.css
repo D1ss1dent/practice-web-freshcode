@@ -63,16 +63,6 @@ nav a:hover {
     background-color: #6FCEFF;
 }
 
-
-section {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-}
-
 .support_fund {
     display: flex;
     align-items: center;
@@ -127,17 +117,13 @@ section {
     background-color: #FFD700;
 }
 
-/* /////////////////////////////////////////////////////////////////////////////// */
-
-
 .who_are_we {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 80vh;
     text-align: center;
     background-color: #fff;
-    padding: 0 5vw;
 }
 
 .who_are_we-content {
@@ -152,7 +138,6 @@ section {
     margin-bottom: 1rem;
 }
 
-
 .who_are_we p {
     font-size: 20px;
     margin-bottom: 0.5rem;
@@ -163,73 +148,365 @@ section {
     color: #73A6B1;
 }
 
-#a {
-    background-color: #6F1EAA;
-    color: #fff;
-    width: 100%;
+.cases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
 }
 
-/* /////////////////////////////////////////////////////////////////////////////// */
+.case {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F1FDFF;
+    padding: 2rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    max-width: 900px;
+}
+
+.case-text {
+    flex: 1;
+    padding: 1rem;
+}
+
+.case-text h2 {
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.case-text p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.case-image {
+    flex: 1;
+    text-align: right;
+}
+
+.case-image img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.cases-button {
+    margin-top: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #7AE5FD;
+    color: black;
+    padding: 0.8rem 2rem;
+    border-radius: 87px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: normal;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #6FCEFF;
+}
+
+.mission {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 50vh;
+}
+
+.mission_container {
+    width: 80vw;
+    height: 20vw;
+    background-color: #F1FDFF;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: visible;
+}
+
+.mission_text {
+    font-size: 24px;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    max-width: 31vw;
+    word-wrap: break-word;
+}
+
+.imagekids {
+    width: 50vw;
+    height: 82vh;
+    align-self: flex-end;
+    margin-right: -10vw;
+}
+
+.support {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60vh;
+    padding-bottom: 50vh;
+}
+
+.support-title {
+    font-size: 3vw;
+    margin-bottom: 1vh;
+    font-weight: normal;
+}
+
+.support-subtext {
+    font-size: 1.5vw;
+    color: #73A6B1;
+    margin-bottom: 3vh;
+    font-weight: normal;
+}
+
+.support-goal {
+    font-size: 2vw;
+    margin-bottom: 2vh;
+    font-weight: normal;
+}
+
+.support-counter {
+    display: flex;
+    font-size: 5vw;
+    font-weight: normal;
+    align-items: center;
+}
+
+.support-counter span {
+    margin: 0 1vw;
+    color: black;
+}
+
+.support-counter .separator {
+    color: #9AD2DE;
+    font-weight: normal;
+}
+
+.contacts {
+    width: 100vw;
+    padding: 5vh 0;
+    background-color: #F9FADF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts-top {
+    display: flex;
+    width: 70vw;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4vh;
+    padding-left: 7vw;
+}
+
+.contacts-title {
+    font-size: 3vw;
+    font-weight: normal;
+    text-align: left;
+    flex: 1;
+}
+
+.contacts-right {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contacts-right p {
+    font-size: 1.5vw;
+}
+
+.contacts-info img {
+    width: 2vw;
+    margin-bottom: 1vh;
+}
+
+.contacts-info {
+    font-size: 1.3vw;
+    text-align: start;
+    color: #000;
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 25vw;
+}
+
+.contacts-info strong {
+    display: block;
+}
+
+.contacts-icons {
+    display: flex;
+    align-items: flex-start;
+    gap: 1vw;
+    margin-bottom: 1vh;
+    padding-top: 4vh;
+}
+
+.contacts-icons img {
+    width: 2vw;
+}
+
+.contacts-icons p {
+    align-items: flex-start;
+}
+
+.contacts-content {
+    width: 70vw;
+    background: white;
+    padding: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacts-content img {
+    width: 35%;
+}
+
+.contacts-form {
+    width: 55%;
+    text-align: left;
+}
+
+.contacts-form h3 {
+    font-size: 1.6vw;
+    margin-bottom: 3vh;
+    font-weight: normal;
+    max-width: 30vw;
+}
+
+.contacts-form input {
+    width: 100%;
+    padding: 2vh;
+    margin-bottom: 2vh;
+    font-size: 1.2vw;
+    border: none;
+    background-color: #F9FADF;
+    border-radius: 30vw;
+    width: 32vw;
+    color: black;
+}
+
+.contacts-form input::placeholder {
+    color: black;
+    opacity: 1;
+    padding-left: 1.5vw;
+}
+
+.contacts-form button {
+    width: 32vw;
+    padding: 2vh;
+    font-size: 1vw;
+    background-color: #7AE5FD;
+    border: none;
+    border-radius: 30vw;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contacts-form button:hover {
+    background-color: #6FCEFF;
+}
+
 @media (max-width: 768px) {
     header {
-        flex-direction: row;
-        justify-content: space-between;
         padding: 0.8rem 3vw;
     }
 
     .logo img {
-        height: 6vh;
+        height: 5vh;
     }
 
     nav {
-        flex-wrap: nowrap;
         gap: 1rem;
     }
 
     nav a {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
     }
 
     .donate-btn {
         padding: 0.5rem 1rem;
-        font-size: 0.85rem;
+        font-size: 0.9rem;
     }
 
-    .support_fund {
-        padding: 0 3vw;
-        background-size: cover;
-        background-position: center;
+    section {
+        height: 80vh;
+        font-size: 1.5rem;
+        margin-bottom: 4rem;
     }
 
     .support_fund h1 {
-        font-size: 48px;
-        line-height: 1.3;
+        font-size: 50px;
     }
 
     .support_fund p {
         font-size: 18px;
-        max-width: 320px;
-    }
-
-    .support_fund-content {
-        text-align: left;
-        max-width: 100%;
     }
 
     .who_are_we h1 {
         font-size: 48px;
+        margin-top: 0;
     }
 
     .who_are_we p {
         font-size: 18px;
     }
+
+    .case-text h2 {
+        font-size: 32px;
+    }
+
+    .case-text p {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 16px;
+    }
+
+    .mission {
+        width: 90vw;
+        padding-top: 120vh;
+    }
+
+    .mission_container {
+        width: 90vw;
+        height: 30vw;
+    }
+
+    .mission_text {
+        font-size: 20px;
+        margin-right: 1.5vw;
+        margin-left: 1.5vw;
+        max-width: 80%;
+    }
+
+    .imagekids {
+        width: 60vw;
+        height: 60vh;
+        margin-right: -5vw;
+    }
 }
 
-/* /////////////////////////////////////////////////////////////////////////////// */
-
-
 @media (max-width: 480px) {
-
     header {
         flex-direction: column;
         align-items: center;
@@ -319,12 +596,83 @@ section {
         background-color: #FFD700;
     }
 
+    .who_are_we {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        height: 80vh;
+        text-align: center;
+    }
+
     .who_are_we h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .who_are_we p {
+        font-size: 12px;
+    }
+
+    .cases {
+        padding: 2rem 5vw;
+    }
+
+    .case {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .case-text h2 {
+        font-size: 22px;
+        margin-bottom: 0.5rem;
+    }
+
+    .case-text p {
         font-size: 14px;
+        margin-bottom: 1rem;
+    }
+
+    .case-image {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .case-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .mission {
+        padding-top: 150vh;
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission_container {
+        width: 90vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2vw;
+    }
+
+    .mission_text {
+        font-size: 16px;
+        margin-bottom: 1.5vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
         max-width: 90%;
+        text-align: center;
+    }
+
+    .imagekids {
+        width: 80vw;
+        height: 45vh;
+        margin-top: 2vw;
     }
 }
